@@ -4,13 +4,13 @@ from .models import Post
 class PostSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
     is_owner = serializers.SerializerMethodField()
-    profile_id = serializers.ReadOnlyField(souce='owner.username')
+    profile_id = serializers.ReadOnlyField(source='owner.username')
     profile_image = serializers.ReadOnlyField(source='owner.image')
 
     class Meta:
-        model = Ppst
+        model = Post
         fields = [
-            'id', 'owner', 'created_at', 'updated_at', 'name', 'content', 'image', 'is_owner', 'image_filter'
+            'id', 'owner', 'created_at', 'updated_at', 'content', 'image', 'is_owner', 'profile_id', 'image_filter', 'profile_image'
         ]
         
     def validate_image(self, value):
