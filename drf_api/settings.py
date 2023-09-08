@@ -36,9 +36,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEV' in os.environ
 
-ALLOWED_HOSTS = ['https://drf-api-tutorial-8b41c2d4e8d3.herokuapp.com/']
+ALLOWED_HOSTS = ['drf-api-tutorial-8b41c2d4e8d3.herokuapp.com']
 
 
 # Application definition
