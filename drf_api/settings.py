@@ -40,7 +40,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [
-   os.environ.get('ALLOWED_HOST')
+   os.environ.get('ALLOWED_HOST'),
+   '8000-edwardshanahan07-drfapi-c1p2kerhdc0.ws-eu104.gitpod.io',
 ]
 
 
