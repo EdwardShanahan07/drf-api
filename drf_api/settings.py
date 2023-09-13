@@ -39,13 +39,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
 
-# ALLOWED_HOSTS = [
-#    os.environ.get('ALLOWED_HOST'),
-#    '8000-edwardshanahan07-drfapi-c1p2kerhdc0.ws-eu104.gitpod.io',
-# ]
-
-ALLOWED_HOSTS = ['drf-api-tutorial-8b41c2d4e8d3.herokuapp.com']
-
+ALLOWED_HOSTS = [
+   os.environ.get('ALLOWED_HOSTS'),
+   '8000-edwardshanahan07-drfapi-c1p2kerhdc0.ws-eu104.gitpod.io',
+]
 
 # Application definition
 
