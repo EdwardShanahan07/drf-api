@@ -45,7 +45,7 @@ DEBUG = False
 #    '8000-edwardshanahan07-drfapi-c1p2kerhdc0.ws-eu104.gitpod.io',
 # ]
 
-ALLOWED_HOST = ['drf-api-tutorial-8b41c2d4e8d3.herokuapp.com']
+ALLOWED_HOSTS = ['drf-api-tutorial-8b41c2d4e8d3.herokuapp.com']
 
 
 # Application definition
